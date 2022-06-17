@@ -3,12 +3,110 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tailwind Webpack</title>
+    <meta name="description" content="Noname Craft"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <title>NonameCraft</title>
 </head>
 <body>
-<h1 class="text-3xl font-bold underline">
-    Привет мир!
-</h1>
+
+<!--Nav Menu-->
+
+<i class="bi bi-list fixed right-2 text-4xl top-2 z-20 cursor-pointer text-gray-300 drop-shadow-md md:hidden"
+   id="menu-btn"></i>
+<div class="flex flex-col md:flex md:flex-col fixed w-full h-full p-4 bg-main-100 gap-4 justify-between z-10 hidden"
+     id="menu">
+    <nav class="flex flex-col gap-4 mt-10">
+        <button class="text-white duration-300 font-bold bg-main-300 hover:bg-main-400 p-2 min-w-[75px]">Noname Craft
+        </button>
+        <button class="text-white duration-300 font-bold border-2 border-main-300 hover:border-main-400 p-2 min-w-[75px]">
+            Test
+        </button>
+        <button class="text-white duration-300 font-bold border-2 border-main-300 hover:border-main-400 p-2 min-w-[75px]">
+            Test
+        </button>
+        <button class="text-white duration-300 font-bold border-2 border-main-300 hover:border-main-400 p-2 min-w-[75px]">
+            Test
+        </button>
+        <button class="text-white duration-300 font-bold border-2 border-main-300 hover:border-main-400 p-2 min-w-[75px]">
+            Test
+        </button>
+    </nav>
+</div>
+
+<!-- Join Server Now -->
+
+<div class="flex flex-col bg-main-200 p-4 text-white">
+    <p>🟢 1.000 Players Online</p>
+    <h1 class="text-2xl font-bold">Noname Craft</h1>
+    <p class="my-2 text-lg">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad eos illo natus nihil ut! Aut
+        distinctio eaque ipsum laboriosam magni, maxime modi nemo possimus quibusdam, rem similique totam ut vero. </p>
+    <button class="p-2 min-w-[75px] bg-pinky-100 hover:bg-pinky-200 font-bold">Start Playing</button>
+</div>
+
+<!-- About server -->
+
+<div class="flex flex-col p-4 gap-2 text-black">
+    <h2 class="text-2xl font-bold">About Noname Craft</h2>
+    <p class="text-lg text-gray-500">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad eos illo natus nihil
+        ut! Aut distinctio eaque ipsum laboriosam magni, maxime modi nemo possimus quibusdam, rem similique totam ut
+        vero. </p>
+    <p class="text-lg text-gray-500">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad eos illo natus nihil
+        ut! Aut distinctio eaque ipsum laboriosam magni, maxime modi nemo possimus quibusdam, rem similique totam ut
+        vero. </p>
+
+    <div class="flex flex-col text-gray-500 gap-1">
+        <p>Server IP: <span class="text-black font-bold">nonamecraft.ru</span></p>
+        <button class="p-2 min-w-[75px] bg-main-300 hover:bg-main-400 font-bold text-white">Start Playing</button>
+        <p class="text-black">🟢 <span class="text-main-300 font-bold">1.000</span> Players Online</p>
+    </div>
+</div>
+
+<hr class="border-b-[1px] border-[inherit]">
+<!-- WTF? -->
+
+<div class="flex flex-col p-4 text-black">
+    <h3 class="text-2xl font-bold">A brand new Minecraft experience</h3>
+    <p class="my-2 text-lg text-gray-500">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad eos illo natus
+        nihil ut! Aut
+        distinctio eaque ipsum laboriosam magni, maxime modi nemo possimus quibusdam, rem similique totam ut vero. </p>
+    <button class="p-2 min-w-[75px] bg-pinky-100 hover:bg-pinky-200 font-bold text-white">Start Playing</button>
+</div>
+
+<hr class="border-b-[1px] border-[inherit]">
+
+<div class="tabs m-4">
+    <input type="radio" name="tab-btn" id="tab-btn-1" value="" checked="">
+    <label for="tab-btn-1">Карта</label>
+    <input type="radio" name="tab-btn" id="tab-btn-2" value="">
+    <label for="tab-btn-2">Железо</label>
+    <input type="radio" name="tab-btn" id="tab-btn-3" value="">
+    <label for="tab-btn-3">Оптимизация</label>
+
+    <div id="content-1">Содержимое 1...</div>
+    <div id="content-2">Содержимое 2...</div>
+    <div id="content-3">Содержимое 3...</div>
+</div>
+
+<hr class="border-b-[1px] border-[inherit]">
+
+<div class="flex flex-col p-4 items-center">
+    <p class="text-[12pt] text-gray-500">Всем этим руководит</p>
+    <p class="text-[14pt] font-bold">Персонал сервера</p>
+    <img id="owner" alt="__Lanakod__" class="w-[75px] h-[75px] m-4">
+    <p class="text-[12pt]">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt, voluptas.</p>
+    <p class="text-[14pt] font-bold">__Lanakod__</p>
+    <p class="text-[11pt] text-gray-500">Создатель/Владелец/Хостинг</p>
+</div>
+
 <script src="bundle.js"></script>
 </body>
 </html>
